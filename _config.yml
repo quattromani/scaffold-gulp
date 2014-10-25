@@ -8,7 +8,7 @@ baseurl: "/scaffold-gulp/"
 url: "http://maxquattromani.com"
 author: "Max Quattromani"
 twitter_username: maxquattromani
-github_username:  quattromani
+github_username: quattromani
 
 # Build settings
 markdown: kramdown

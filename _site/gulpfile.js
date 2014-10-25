@@ -96,10 +96,11 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
 // Build Jekyll then launch server
 gulp.task('browser-sync', ['jekyll-build'], function() {
   browserSync.init(null, {
-    server: {
-      baseDir: '_site'
-    },
-    host: "localhost"
+    // server: {
+    //   baseDir: '_site'
+    // },
+    host: "localhost",
+    port: 4000
   });
 });
 
@@ -109,7 +110,7 @@ gulp.task('bs-reload', ['jekyll-build'], function () {
 });
 
 // Default Task
- gulp.task('default', ['pre-process', 'bs-reload', 'browser-sync'], function(){
+gulp.task('default', ['pre-process', 'bs-reload', 'browser-sync'], function(){
   gulp.start('pre-process', 'csslint', 'scripts', 'js-min', 'minify-img');
   gulp.watch('scss/partials/*.scss', ['pre-process']);
   gulp.watch('css/main.css', ['minify-css']);

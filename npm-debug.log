@@ -8,7 +8,7 @@
 7 verbose unsafe-perm in lifecycle true
 8 info mn-ml@2.0.1 Failed to exec start script
 9 error mn-ml@2.0.1 start: `gulp`
-9 error Exit status 8
+9 error Exit status 1
 10 error Failed at the mn-ml@2.0.1 start script.
 10 error This is most likely a problem with the mn-ml package,
 10 error not with npm itself.

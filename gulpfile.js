@@ -99,7 +99,8 @@ gulp.task('browser-sync', ['jekyll-build'], function() {
     server: {
       baseDir: '_site'
     },
-    host: "localhost"
+    host: "localhost",
+    port: 4000
   });
 });
 
@@ -109,7 +110,7 @@ gulp.task('bs-reload', ['jekyll-build'], function () {
 });
 
 // Default Task
- gulp.task('default', ['pre-process', 'bs-reload', 'browser-sync'], function(){
+gulp.task('default', ['pre-process', 'bs-reload', 'browser-sync'], function(){
   gulp.start('pre-process', 'csslint', 'scripts', 'js-min', 'minify-img');
   gulp.watch('scss/partials/*.scss', ['pre-process']);
   gulp.watch('css/main.css', ['minify-css']);
