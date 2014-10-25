@@ -1,0 +1,197 @@
+<!doctype html>
+<!--[if IE 8 ]><html class="ie ie8 no-js" lang="en"><![endif]-->
+<!--[if IE 9 ]><html class="ie ie9 no-js" lang="en"><![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en-us"><!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tables |  Scaffold</title>
+
+  <meta name="description" content="" />
+  <meta name="author" content="Max Quattromani">
+  <meta name="rating" content="general">
+
+  <meta name="format-detection" content="telephone=no">
+
+  <meta name="robots" content="INDEX,FOLLOW" />
+
+  <link rel="stylesheet" href="/css/main.min.css" >
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!-- Prerender Resume page -->
+  <link rel="prerender" href="http://maxquattromani.com/resume">
+
+  <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="maxquattromani">
+    <meta name="twitter:url" content="http://maxquattromani.com/">
+    <meta name="twitter:creator" content="maxquattromani">
+    <meta name="twitter:title" content="Tables - ">
+    <meta name="twitter:description" content="">
+
+</head>
+
+<body class="">
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+	    <!-- Begin Content Wrapper -->
+    <div class="content">
+      <div class="container">
+
+  <a class="logo" href="/">
+
+  <span class="h3 logo tight fs40">Scaffold</span>
+
+
+  <span class="logo_slash link fs40">/</span>
+</a>
+<span class="h1 division fs40">Tables</span>
+
+<hr>
+
+
+    <span id="table-anchor" class="h2 jumpTo-anchor">Table</span>
+
+<div class="right">
+  <a class="btn btn-primary" href="tables">Isolate</a>
+</div>
+
+<p>One of the most semantic elements in the framework; the table is here mostly so we don't have to look up the best practices for marking them up when needed. We have a few differnt methods for making tables responsive, but had no intention of commiting to one in the Pattern Library.</p>
+
+<div class="box-column clear">
+
+  <!-- Table Component -->
+  <table>
+    <thead>
+      <tr>
+        <th colspan="2">Items</th>
+        <th class="qty">Qty</th>
+        <th class="price">Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="item">Envisioning Information <span>By Edward R. Tufte – Hardcover</span></td>
+        <td class="stock in">In Stock</td>
+        <td class="qty">1</td>
+        <td class="price">$33.32</td>
+      </tr>
+      <tr>
+        <td class="item">Outliers <span>By Malcolm Gladwell – Hardcover</span></td>
+        <td class="stock in">In Stock</td>
+        <td class="qty">2</td>
+        <td class="price">$33.58 <span>($16.79 × 2)</span></td>
+      </tr>
+      <tr>
+        <td class="item">Don’t Make Me Think <span>By Steve Krug – Paperback</span></td>
+        <td class="stock out">Out of Stock</td>
+        <td class="qty">1</td>
+        <td class="price">$22.80</td>
+      </tr>
+      <tr>
+        <td class="item">Steve Jobs <span>By Walter Isaacson – Hardcover</span></td>
+        <td class="stock in">In Stock</td>
+        <td class="qty">1</td>
+        <td class="price">$17.49</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr class="sub">
+        <td colspan="3">Subtotal</td>
+        <td>$107.19</td>
+      </tr>
+      <tr class="tax">
+        <td colspan="3">Tax</td>
+        <td>$10.71</td>
+      </tr>
+      <tr class="total">
+        <td colspan="3">Total</td>
+        <td>$117.90</td>
+      </tr>
+    </tfoot>
+  </table>
+  <!-- .Table Component -->
+
+<div class="highlight"><pre><code class="language-html" data-lang="html">&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th colspan=&quot;2&quot;&gt;Items&lt;/th&gt;
+      &lt;th class=&quot;qty&quot;&gt;Qty&lt;/th&gt;
+      &lt;th class=&quot;price&quot;&gt;Price&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td class=&quot;item&quot;&gt;Envisioning Information &lt;span&gt;By Edward R. Tufte – Hardcover&lt;/span&gt;&lt;/td&gt;
+      &lt;td class=&quot;stock in&quot;&gt;In Stock&lt;/td&gt;
+      &lt;td class=&quot;qty&quot;&gt;1&lt;/td&gt;
+      &lt;td class=&quot;price&quot;&gt;$33.32&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td class=&quot;item&quot;&gt;Outliers &lt;span&gt;By Malcolm Gladwell – Hardcover&lt;/span&gt;&lt;/td&gt;
+      &lt;td class=&quot;stock in&quot;&gt;In Stock&lt;/td&gt;
+      &lt;td class=&quot;qty&quot;&gt;2&lt;/td&gt;
+      &lt;td class=&quot;price&quot;&gt;$33.58 &lt;span&gt;($16.79 × 2)&lt;/span&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td class=&quot;item&quot;&gt;Don’t Make Me Think &lt;span&gt;By Steve Krug – Paperback&lt;/span&gt;&lt;/td&gt;
+      &lt;td class=&quot;stock out&quot;&gt;Out of Stock&lt;/td&gt;
+      &lt;td class=&quot;qty&quot;&gt;1&lt;/td&gt;
+      &lt;td class=&quot;price&quot;&gt;$22.80&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td class=&quot;item&quot;&gt;Steve Jobs &lt;span&gt;By Walter Isaacson – Hardcover&lt;/span&gt;&lt;/td&gt;
+      &lt;td class=&quot;stock in&quot;&gt;In Stock&lt;/td&gt;
+      &lt;td class=&quot;qty&quot;&gt;1&lt;/td&gt;
+      &lt;td class=&quot;price&quot;&gt;$17.49&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tfoot&gt;
+    &lt;tr class=&quot;sub&quot;&gt;
+      &lt;td colspan=&quot;3&quot;&gt;Subtotal&lt;/td&gt;
+      &lt;td&gt;$107.19&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&quot;tax&quot;&gt;
+      &lt;td colspan=&quot;3&quot;&gt;Tax&lt;/td&gt;
+      &lt;td&gt;$10.71&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&quot;total&quot;&gt;
+      &lt;td colspan=&quot;3&quot;&gt;Total&lt;/td&gt;
+      &lt;td&gt;$117.90&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tfoot&gt;
+&lt;/table&gt;</code></pre></div>
+
+</div>
+
+
+
+	      </div>
+    </div>
+    <!-- ./End Content Wrapper -->
+
+	    <!-- Footer Component -->
+    <footer class="container" role="contentinfo">
+
+      <span class="small-body-text">&copy; <span id="year" class="getYear">year</span> </span>
+
+    </footer>
+    <!-- ./Footer Component -->
+
+    <!-- scripts -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
+    <script src="/js/build/production.min.js"></script>
+    
+
+    </body>
+</html>
+</html>
+
